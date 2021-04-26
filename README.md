@@ -8,7 +8,7 @@
 </p>
 
 # Instalação:
-
+Api Rest para consultas de estados e cidades da União Federativa do Brasil, PUT melhor utilizado para visualização dos dados apos todo o processo de instalação:
 
 1 - composer update;
 2 - npm install;
