@@ -9,10 +9,19 @@ class Estados extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'id',
-        'UF',
-        'name',
-    ];
-    
+    protected $table = 'estados';
+
+    protected $fillable = ['id', 'UF', 'name'];
+
+    public function cidades()
+    {
+        return $this->hasMany(Cidades::class, 'estado_id', 'id');
+    }
+    public function rules($id = '')
+    {
+        return [
+            'name'=> "required|min:3|max:200|unique:estados,name, {$id},id",
+            'UF'=>'required|min:2'
+        ];
+    }
 }

@@ -1,9 +1,8 @@
 <?php
 
-use App\Http\Controllers\cidadesController;
-use App\Http\Controllers\estadosController;
-use Illuminate\Http\Request;
+use App\Http\Controllers\api\CidadesController;
+use App\Http\Controllers\api\EstadosController;
 use Illuminate\Support\Facades\Route;
 
-Route::apiResource('estados', estadosController::class);
-Route::apiResource('cidades', cidadesController::class);
+Route::apiResource('cidades', CidadesController::class);
+Route::apiResource('estados', EstadosController::class);
