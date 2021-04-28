@@ -18,3 +18,7 @@ Api Rest para consultas de estados e cidades da União Federativa do Brasil, PUT
  
 5 - Depois instalar o seeder criado como exemplo:
  $php artisam db:seed
+
+#TESTS
+caso tenha algum problema com os testes WEB foi utilizado o comando para instalar o DUSK composer require --dev laravel/dusk
+
